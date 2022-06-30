@@ -102,7 +102,7 @@ class Menu extends CI_Controller
     public function hapusdata($id){
         $tabelname = "user_sub_menu";
         $tabelId = "id";
-        $this->load->model('Menu_Model',menu);
+        $this->load->model('Menu_Model','menu');
         $this->menu->deleteData($id,$tabelname,$tabelId);
         $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Data berhasil di hapus!</div>');
         redirect('menu/submenu');
