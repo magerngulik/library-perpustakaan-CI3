@@ -217,6 +217,7 @@ class Buku extends CI_Controller
         $data['kelas'] = $this->db->get('buku_kelas')->result_array();
         $data['kelasS'] = $this->menu->getKelasSingle($id);
         $namaTabel ="buku_induk";
+        
         $idtabel ="id_buku";
         $data['buku'] = $this->menu->getTabelSingle($id,$namaTabel,$idtabel);
         // $data['buku'] = $this->menu->getBukuSingle($id); tadi nya test biar tau di mana salahnya
