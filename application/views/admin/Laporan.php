@@ -32,7 +32,8 @@ class Laporan extends CI_Controller
             $data['siswa'] = $this->menu->cariBuku();
         }
 
-        //generate code
+        //generate code   
+        //generate code  ini kode baru 
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
             $this->load->view('templates/topbar', $data);
